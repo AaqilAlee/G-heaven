@@ -21,7 +21,7 @@ const InvoiceCard = ({ orderDetails }) => {
   };
 
   return (
-    <div className="">
+    <section className="">
       <div className="card-body">
         <div className="container mt-3">
           <div className="row d-flex justify-content-between">
@@ -31,8 +31,9 @@ const InvoiceCard = ({ orderDetails }) => {
                 data-ripple-color="light"
               >
                 <img
-                  src="/logo/api_logo.png"
-                  className="w-100 invoice_card"
+                style={{width: "80px"}}
+                  src="/logo/logo3.png"
+                  className=" invoice_card"
                   alt="invoice logo"
                 />
               </div>
@@ -206,7 +207,7 @@ const InvoiceCard = ({ orderDetails }) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

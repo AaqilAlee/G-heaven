@@ -16,8 +16,8 @@ const OurCompany = () => {
             </Col>
             <Col lg={7} md={7}>
               <div
-                className="px-3 d-flex align-items-center"
-                // style={{ height: "400px" }}
+                className="px-3 d-flex align-items-center company_description"
+                style={{ height: "500px" }}
               >
                 <div>
                   <p className="text-capitalize font-30 fw-bold pb-3">

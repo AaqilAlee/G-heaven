@@ -613,7 +613,7 @@ nav .nav-link {
   .pro_sec_title {
     font-size: 24px !important;
   }
-  .view_all_btn{
+  .view_all_btn {
     position: absolute;
     right: 16px;
     margin-top: -65px;
@@ -1246,6 +1246,8 @@ banner css starts
  our company css start
 ====================*/
 .our_company {
+  height: 500px;
+  align-items: center;
   background-color: #f2f2f2;
 }
 .explore_btn {
@@ -2792,7 +2794,11 @@ Responsive part end
   margin-right: auto;
   margin-left: auto;
 }
-
+/* invoice page css */
+div#printable {
+  margin-top: 150px !important;
+}
+/* invoice page css end */
 @media screen and (min-width: 576px) {
   .container-bod {
     max-width: 540px;
@@ -2986,4 +2992,3 @@ Responsive part end
   background-color: var(--theme-color) !important;
 }
 /* go back from 404 page end */
-

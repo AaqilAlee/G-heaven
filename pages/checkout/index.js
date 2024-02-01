@@ -26,7 +26,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { useCart } from "../../utils/hooks/useCart";
 import Head from "next/head";
-// import {Oval} from "react-loader-spinner";
+import {Oval} from "react-loader-spinner";
 import withAuth from "../../utils/HOC/withAuth";
 
 const CheckoutPage = () => {
@@ -606,17 +606,16 @@ const CheckoutPage = () => {
                     ))}
                 </div> */}
 
-                <div className="mt-3">
-                  {/* {paymentMethods &&
-                    paymentMethods.length == 1 &&
-                    paymentMethods.map((paymentMethod, key) => ( */}
-                      <div className="form-check form-check-inline" >
+<div className="mt-3">
+                  {paymentMethods &&
+                    paymentMethods.length > 0 &&
+                    paymentMethods.map((paymentMethod, key) => (
+                      <div className="form-check form-check-inline" key={key}>
                         <input
                           className="form-check-input"
                           type="radio"
-                          id="inlineRadio1"
                           name="paymentMethod"
-                          value={paymentMethods.id}
+                          value={paymentMethod.id}
                           onChange={(event) =>
                             handlePaymentMethodId(event.target.value)
                           }
@@ -625,16 +624,12 @@ const CheckoutPage = () => {
                           className="form-check-label text-capitalize"
                           htmlFor="inlineRadio1"
                         >
-                          {/* {paymentMethod.code === "sslcommerze"
-                            ? "COD"
-                            : ""} */}
-                            COD
-                          {/* {paymentMethod.code === "sslcommerze"
+                          {paymentMethod.code === "sslcommerze"
                             ? "Pay Online"
-                            : "COD"} */}
+                            : "COD"}
                         </label>
                       </div>
-                    {/* ))} */}
+                    ))}
                 </div>
 
                 <p className="mt-3 d-flex flex-column">
@@ -670,7 +665,7 @@ const CheckoutPage = () => {
                   </Form.Group>
                 </div>
 
-                {/* <div className="">
+                <div className="">
                   <button
                     type="button"
                     className="d-flex align-items-center justify-content-center text-capitalize place_order_border cursor-pointer font-16 w-100 place-order mt-4 font-lato fw-bold"
@@ -695,7 +690,7 @@ const CheckoutPage = () => {
                     )}
                     place order
                   </button>
-                </div> */}
+                </div>
               </div>
 
               <div className="">

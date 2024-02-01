@@ -33,7 +33,7 @@ const MyAccountPage = () => {
             </Head>
             <section> <div className="career_banner position-relative">
           <img
-            src="/profile.jpg"
+            src="/profile1.png"
             alt="career img"
             className="career_banner_img"
           />

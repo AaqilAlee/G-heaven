@@ -1,11 +1,18 @@
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
+@import url('./Aboutus.css');
+@import url('./career.css');
+@import url('./catalogue.css');
+@import url('./Category.css');
+@import url('./comment.css');
+@import url('./enterprice.css');
+@import url('./FeaturedProduct.css');
+@import url('./footer.css');
+@import url('./Header.css');
+@import url('./normalize.css');
+@import url('./Slider.css');
+@import url('./Topbar.css');
+@import url('./TopManu.css');
+@import url('./UpcomingProoduct.css');
+@import url('./preloader.css');
 
 /* ==========================================================================
    Base styles: opinionated defaults
