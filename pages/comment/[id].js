@@ -14,17 +14,17 @@ const index = ({ detail }) => {
           <Row>
             <div className="my-5">
               <div className="pb-5">
-                <h1 class="title text-center font-40 fw-bold ">{detail?.item_name}</h1>
-                <h1 class="title text-center font-24">{detail?.item_short_desc}</h1>
+                <h1 className="title text-center font-40 fw-bold ">{detail?.item_name}</h1>
+                <h1 className="title text-center font-24">{detail?.item_short_desc}</h1>
               </div>
-              <div class="comment_details">
+              <div className="comment_details">
                 <div>
                 <img
                   src={getStoragePath(detail?.item_image)}
-                  class="img-class"
+                  className="img-class"
                   alt=""
                 />
-                <p class="align-item pb-3">{detail?.item_long_desc}</p>
+                <p className="align-item pb-3">{detail?.item_long_desc}</p>
                 </div>
                 <div className="pt-5">
                   <Link href="/organogram/corporate" className="back_to_team">Back to Team member</Link>

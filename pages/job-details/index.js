@@ -102,9 +102,7 @@ const index = () => {
                   <Link href="/form-fillup" className="text-uppercase apply_btn glow-on-hover">
                     apply now
                   </Link>
-                  {/* <button class="" type="button">
-                  apply now
-                </button> */}
+                  
                 </div>
               </div>
             </Col>
